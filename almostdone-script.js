@@ -1,36 +1,39 @@
 ///////// ARRAYYYYYY TEXTTTTTTTT ////////////
 
 var eggText = [ 
-    ['big ol bug', 
-     "happy birthday lydia :) <br> can't believe this was one year ago", 
-     'also what is andrew doing??? lol'], 
+    ['many good ones', 
+     "I always try to make you something by hand for a gift, but I got a little tired of painting everyone watercolor landscapes. So this time around I made you a scraggly lookin' chicken that pops out little secret egg messages. I figured you'd like that.", 
+     ,'Rumney, NH', 'beep boop'], 
     //
-    ['pic1', 
-     "happy birthday lydia :) <b> can't believe this was one year ago. happy birthday lydia :) <b> can't believe this was one year ago happy birthday lydia :) <b> can't believe this was one year ago", 
+    ['and lots of love', 
+     "&lt;3", 
      'oops2'], 
     //
-    ['pic2', 
-     "happy birthday lydia :) <b> can't believe this was one year ago",
+    ['GET IN THE HOLE', 
+     "so much to love about this photo... the perfect molehole as well.",
      'wow2'], 
     //
-    ['pic3', 
-     "happy birthday lydia :) <b> can't believe this was one year agohappy birthday lydia :) <b> can't believe this was one year ago. happy birthday lydia :) <b> can't believe this was one year ago happy birthday lydia :) <b> can't believe this was one year ago",
+    ['beep bop boop bop', 
+     "I've had so many good adventures with you. So many good beers. So many funny noises.",
      'bug2'],
     //
-    ['pic4', 
-     "happy birthday lydia :) <b> can't believe this was one year ago",
+    ['ski tours', 
+     "ohhhhh you love skiing maybe not as much as elliot but you love it.",
      'bug2'],
     //
-    ['pic5', 
-     "happy birthday lydia :) <b> can't believe this was one year ago",
+    ['hut ambience', 
+     "and the many other damp smelly places we dry our gear",
      'bug2'],
     //
-    ['pic6', 
-     "happy birthday lydia :) <b> can't believe this was one year ago",
+    ['lovely lakes', 
+     "of the many we've seen to together, the lakes basin &#40;ice and sunshine lakes in particular&#41; remains particularly special. As we plan the coming summer it is tempting to try and make at least one trip to the Wallowas. I'm starting to miss the east side. So many memories there.",
      'bug2'],
     //
-    ['pic7', 'bug1', 'bug2'],
-    ['pic8', 'bug1', 'bug2'],
+    ['epics', 
+     "yeah...",
+     'bug2'],
+    ['ohhhhhhh climbing...', 
+     '', 'bug2'],
     ['pic9', 'bug1', 'bug2'],
     ['pic10', 'bug1', 'bug2'],
     ['pic11', 'bug1', 'bug2'],
@@ -40,6 +43,7 @@ var eggText = [
     ['pic15', 'bug1', 'bug2'],
     ['pic16', 'bug1', 'bug2'],
     ['pic17', 'bug1', 'bug2'],
+    ['pic18', 'bug1', 'bug2'],
 ];
 console.log(eggText);
 
@@ -100,6 +104,7 @@ var topBar = document.getElementById('topBar');
 var footer = document.getElementById('footer');
 
 var updateHTML = "<img src='pics/img"+ counter+".jpg'>";
+
 
 //initialize the Array
 var imgArray = new Array;
