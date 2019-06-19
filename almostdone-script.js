@@ -3,37 +3,37 @@
 var eggText = [ 
     ['many good ones', 
      "I always try to make you something by hand for a gift, but I got a little tired of painting everyone watercolor landscapes. So this time around I made you a scraggly lookin' chicken that pops out little secret egg messages. I figured you'd like that.", 
-     ,'Rumney, NH', 'beep boop'], 
+     'Rumney, NH', 'beep boop'], 
     //
     ['and lots of love', 
-     "&lt;3", 
-     'oops2'], 
+     "&lt;3 <br><br>", 
+     'Jubilee Lake, WA'], 
     //
     ['GET IN THE HOLE', 
      "so much to love about this photo... the perfect molehole as well.",
-     'wow2'], 
+     'City of Rocks, ID'], 
     //
     ['beep bop boop bop', 
      "I've had so many good adventures with you. So many good beers. So many funny noises.",
-     'bug2'],
+     'Joshua Tree, CA'],
     //
     ['ski tours', 
      "ohhhhh you love skiing maybe not as much as elliot but you love it.",
-     'bug2'],
+     'Anthony Lakes, OR'],
     //
     ['hut ambience', 
-     "and the many other damp smelly places we dry our gear",
-     'bug2'],
+     "and the many other damp smelly places we dry our gear.",
+     'Kieths Hut, BC'],
     //
     ['lovely lakes', 
      "of the many we've seen to together, the lakes basin &#40;ice and sunshine lakes in particular&#41; remains particularly special. As we plan the coming summer it is tempting to try and make at least one trip to the Wallowas. I'm starting to miss the east side. So many memories there.",
-     'bug2'],
+     'Wallowa Mountains, OR'],
     //
     ['epics', 
      "yeah...",
      'bug2'],
     ['ohhhhhhh climbing...', 
-     '', 'bug2'],
+     '', 'Joshua Tree, CA'],
     ['pic9', 'bug1', 'bug2'],
     ['pic10', 'bug1', 'bug2'],
     ['pic11', 'bug1', 'bug2'],
@@ -97,9 +97,11 @@ var eggContent = document.getElementById('egg-content')
 var eggContentImage = document.getElementById('egg-content-image');
 var eggContentSubtext = document.getElementById('egg-content-subtext');
 var eggContentTitle = document.getElementById('egg-content-title');
+var eggContentInfo = document.getElementById('egg-content-info');
 var eggTransitionImage = document.getElementById('egg-transition-image');
 var eggTransitionSubtext = document.getElementById('egg-transition-subtext');
 var eggTransitionTitle = document.getElementById('egg-transition-title');
+var eggTransitionInfo = document.getElementById('egg-transition-info');
 var topBar = document.getElementById('topBar');
 var footer = document.getElementById('footer');
 
@@ -233,6 +235,7 @@ chicken.onclick = function popEGG(){
 
 function crackEgg() {
     eggContentImage.innerHTML = "<img src='pics/img" + counter + ".jpg' id='img" + counter + "' class='egg-images'>";
+    eggContentInfo.innerHTML = eggText[counterLAG][2];
     eggContentSubtext.innerHTML = eggText[counterLAG][1];
     eggContentTitle.innerHTML = eggText[counterLAG][0];
     

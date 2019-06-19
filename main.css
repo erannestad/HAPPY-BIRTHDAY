@@ -20,6 +20,8 @@ html{
 }
 
 #body {
+    width: 100%;
+    height: 100%;
     z-index: 10;
     cursor: pointer;
     overflow: hidden;
@@ -34,7 +36,39 @@ html{
     overflow: visible;
     margin-left: 24.5vw;
     margin-top: 33vh;
-    
+}
+
+#border-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: contents;
+    overflow: visible;
+    z-index: 15000;
+/*    grid-template-columns: 1fr 1fr 1fr;*/
+}
+
+#Layer_2 {
+    transform-origin: bottom left;
+    position: absolute;
+    max-width: 250px;
+    width:15%;
+    min-width: 130px;
+    overflow: visible;
+    margin-left: 86%;
+    margin-top: -100vh;
+}
+
+#Layer_3 {
+    transform-origin: bottom right;
+    position: absolute;
+    max-width: 200px;
+    width:15%;
+    min-width: 130px;
+/*    transform-origin: 50%;*/
+    overflow: visible;
+    margin-left: 0%;
+    margin-top: 20vh;
 }
 
 .shift {
@@ -286,10 +320,14 @@ h2 {
 #egg-transition-title {overflow:hidden; height:auto;text-align:left;}
 #egg-transition-image {overflow: hidden; height: auto;}
 #egg-transition-subtext {overflow:hidden; height:fixed; text-align:left;}
+#egg-transition-info {overflow:hidden; height:fixed; text-align:center;}
 
-#egg-content-subtext {color: #3B3E98; text-align: right; /*targetted with js*/ }
+#egg-content-subtext {color: #3B3E98; width: 100%; text-align: justify;
+text-align-last:right; /*targetted with js*/ }
 #egg-content-title {margin-left: -100%; /*targetted with js*/}
 #egg-content-image {/*targetted with js*/}
+#egg-content-info {color: #3B3E98; width: 100%; font-size: 12px; text-align: center;
+/*targetted with js*/}
 
 .slideIn{
     animation-name: slideIn;
@@ -366,6 +404,13 @@ h2 {
     100% {margin-top: 130%;}
 }
 
+svg2 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 40000;
+}
+
 
 /***************************************/
 /*************MEDIA QUERIES*************/
@@ -380,7 +425,7 @@ h2 {
 @media screen and (max-width: 900px) {
     .egg-images {
         width: auto;
-        height: 35vh;
+        height: 30vh;
     }
 }
 
