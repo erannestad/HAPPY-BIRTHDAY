@@ -246,6 +246,13 @@ function crackEgg() {
     topBar.classList.add('shift-topBar');
     footer.classList.add('shift-footer');
     
+    setTimeout(function(){
+        //add transition animations//
+         topBar.classList.add('shift-topBar-hide');
+        footer.classList.add('shift-topBar-hide');
+    }, 1000);
+   
+    
     
 //        function transitionContent () {
 //            
