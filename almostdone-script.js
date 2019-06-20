@@ -104,6 +104,8 @@ var eggTransitionTitle = document.getElementById('egg-transition-title');
 var eggTransitionInfo = document.getElementById('egg-transition-info');
 var topBar = document.getElementById('topBar');
 var footer = document.getElementById('footer');
+var Layer_3 = document.getElementById('Layer_3');
+var Layer_2 = document.getElementById('Layer_2');
 
 var updateHTML = "<img src='pics/img"+ counter+".jpg'>";
 
@@ -125,9 +127,30 @@ chicken.onclick = function popEGG(){
     
     counter++;
     counterLAG++;
+//    var getLayer_2Top = 180;
+    var counterSlideLeft = -120 + counter*20;
+    var counterSlideRight =  counter*20;
+    
+    
     console.log('counter:' + counter);
     console.log('counterLAG:' + counterLAG);
+    console.log('counterSlideLeft:' + counterSlideLeft);
+//    console.log('getLayer_2Top:' + getLayer_2Top);
+    console.log('counterSlideRight:'+ counterSlideRight);
     
+    Layer_2.style.top = "-"+counterSlideRight+ "vh";
+    Layer_3.style.top = ""+counterSlideLeft+ "vh";
+    //increment sliders
+//        if (window.matchMedia("(max-width: 900px)").matches) {
+//                Layer_2.style.top = "-"+counterSlideRight+ "vh";
+//                Layer_3.style.top = ""+counterSlideLeft+ "vh";
+//        }
+//        else {
+//                Layer_3.style.left = counterSlideLeft+ "vh";
+//        }
+
+    
+    //strip egg animations
     eggX.classList.remove('bounce-egg-x');
     eggY.classList.remove('bounce-egg-y');
     egg.classList.remove('bounce-egg-rotate');
