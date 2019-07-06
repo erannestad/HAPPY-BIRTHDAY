@@ -3,14 +3,14 @@
 var eggText = [ 
     ['many good ones', 
      "I always try to make you something by hand for a gift, but I got a little tired of painting everyone watercolor landscapes. So this time around I made you a scraggly lookin' chicken that pops out little secret egg messages. I figured you'd like that.", 
-     'Rumney, NH', 'beep boop'], 
+     'Rumney, NH', 'BEEP BOOP'], 
     //
     ['and lots of love', 
      "&lt;3 <br><br>", 
      'Jubilee Lake, WA'], 
     //
     ['GET IN THE HOLE', 
-     "so much to love about this photo... the perfect molehole as well.",
+     "So much to love about this photo, excellent rocks, crew of friendos, the perfect molehole...",
      'City of Rocks, ID'], 
     //
     ['beep bop boop bop', 
@@ -18,32 +18,36 @@ var eggText = [
      'Joshua Tree, CA'],
     //
     ['ski tours', 
-     "ohhhhh you love skiing maybe not as much as elliot but you love it.",
+     "Ohhhhh you love skiing! Okay, maybe not as much as elliot, but I'm glad you've caught the bug a little bit. Thanks for putting up with my snow craze these past couple years. You're a good sport and have improved sooooo much! Truly! I know you'll dispute that but you should be proud of what you're able to do on those lil snow planks. You rock!",
      'Anthony Lakes, OR'],
     //
     ['hut ambience', 
-     "and the many other damp smelly places we dry our gear.",
+     "...and the many other damp and smelly places we dry our gear.",
      'Kieths Hut, BC'],
     //
     ['lovely lakes', 
-     "of the many we've seen to together, the lakes basin &#40;ice and sunshine lakes in particular&#41; remains particularly special. As we plan the coming summer it is tempting to try and make at least one trip to the Wallowas. I'm starting to miss the east side. So many memories there.",
+     "Of the many we've seen to together, the lakes basin &#40;ice and sunshine lakes in particular&#41; remains particularly special. As we plan the coming summer it is tempting to try and make at least one trip to the Wallowas. I'm starting to miss the east side. So many memories there.",
      'Wallowa Mountains, OR'],
     //
-    ['epics', 
-     "yeah...",
-     'bug2'],
-    ['ohhhhhhh climbing...', 
-     '', 'Joshua Tree, CA'],
-    ['pic9', 'bug1', 'bug2'],
-    ['pic10', 'bug1', 'bug2'],
-    ['pic11', 'bug1', 'bug2'],
-    ['pic12', 'bug1', 'bug2'],
-    ['pic13', 'bug1', 'bug2'],
-    ['pic14', 'bug1', 'bug2'],
-    ['pic15', 'bug1', 'bug2'],
-    ['pic16', 'bug1', 'bug2'],
-    ['pic17', 'bug1', 'bug2'],
-    ['pic18', 'bug1', 'bug2'],
+    ['epics...', 
+     "It takes a special kind of person to have a BRUTAL day, and be excited to get out there and do it all over again. Stoked to be trail garbage again with you sometime soon :)",
+     'Enchantments, WA'],
+    //
+    ['the gnar.', 
+     "gettin' bunged by big rocks", 'Joshua Tree, CA'],
+    ['', 'The last trip to Squamish was so much fun. Amazing how climbing trad can open up so much new climbing. Lets get up on top of the big guy! ', 'Squamish, BC'],
+    //
+    ['dusks', "...thinking about sitting out with you watching the sky change.", 'Walla Walla, WA'],
+    //
+    ['2ft of clearance', 'and nights looking up at strange lily pads', 'Swampville, WA'],
+    //
+    ['North Cascades', "It's your happy home and you look adorable in it.", 'Deming, WA'],
+    //
+    ['sleepy forests, hanging moss, and bright chalked edges', "I can't really boulder very well so its a good thing you're an exceptional hammock partner.", 'Squamish, BC'],
+    //
+    ['buncha dweebs', 'lookin SHARP post mullet! Lucky to know you and such great friendos', 'Walla Walla, WA'],
+    //
+    ['safety glasses on!', 'out with a bang', 'Walla Walla, WA'],
 ];
 console.log(eggText);
 
@@ -128,7 +132,7 @@ chicken.onclick = function popEGG(){
     counter++;
     counterLAG++;
 //    var getLayer_2Top = 180;
-    var counterSlideLeft = -120 + counter*20;
+    var counterSlideLeft = -350 + counter*20;
     var counterSlideRight =  counter*20;
     
     
